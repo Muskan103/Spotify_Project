@@ -27,7 +27,7 @@ export default function ResourcesPage() {
         <img
           src="./66e844e46ac8124ff52418c6_Learn-Header_1920x1080-p-500.jpg"
           alt="hero"
-          className="h-[420px] w-full object-cover opacity-60"
+          className="h-[520px] w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
@@ -50,6 +50,11 @@ export default function ResourcesPage() {
 </div>
 
       </section>
+
+
+
+
+      
 
       {/* Categories */}
       <section className="mt-10 px-6 md:px-10">
