@@ -30,69 +30,124 @@ export default function ResourcesPage() {
           className="h-[420px] w-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20" />
-        <div className="absolute inset-0 flex flex-col justify-center px-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Resources</h1>
-          <p className="max-w-xl text-gray-200 mb-8">
-            Discover insights, expert interviews, creator case studies, and much more.
-          </p>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+  <h1 className="text-[140px] font-bold mb-4">
+    Resources
+  </h1>
 
-          <div className="relative max-w-xl">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-            <Input
-              placeholder="Search"
-              className="pl-12 h-14 rounded-full bg-black/70 border-white/30 text-white"
-            />
-          </div>
-        </div>
+  <p className="text-[20px] text-gray-200 mb-8">
+    Discover insights, expert interviews, creator case studies, and much more.
+  </p>
+
+  <div className="relative w-full max-w-xl">
+    <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white-400" />
+    <Input
+  placeholder="Search"
+  className="pl-12 h-19 rounded-full bg-transparent border-white/30 text-white text-[20px] placeholder:text-[20px]"
+/>
+
+  </div>
+</div>
+
       </section>
 
       {/* Categories */}
       <section className="mt-10 px-6 md:px-10">
-        <div className="flex gap-4 flex-wrap">
-          {['Grow', 'Create', 'How to', 'Case Studies', 'Masterclass'].map((item) => (
-            <Button
-              key={item}
-              variant={item === 'Grow' ? 'default' : 'secondary'}
-              className="rounded-full px-6"
-            >
-              {item}
-            </Button>
-          ))}
-        </div>
-      </section>
+  <div className="flex flex-wrap justify-center gap-4">
+    {['Grow', 'Create', 'How to', 'Case Studies', 'Masterclass'].map((item) => (
+      <Button
+        key={item}
+        variant={item === 'Grow' ?  'secondary' :'default' }
+        className="rounded-full px-8 py-8"
+      >
+        {item}
+      </Button>
+    ))}
+  </div>
+</section>
+
 
       {/* Resource Cards */}
-      <section className="mt-14 px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-[260px]">
-        {/* Large Left Card */}
-        <div className="row-span-2 rounded-3xl overflow-hidden bg-neutral-900">
-          <img src="https://picsum.photos/600/900?1" className="h-full w-full object-cover" />
-        </div>
+      <section className="mt-16 px-6 md:px-10">
+  <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-[380px]">
 
-        {/* Tall Middle Card */}
-        <div className="row-span-2 rounded-3xl overflow-hidden bg-neutral-900">
-          <img src="https://picsum.photos/600/900?2" className="h-full w-full object-cover" />
-        </div>
+    {/* Card 1 – Tall */}
+    <div className="row-span-2 rounded-2xl overflow-hidden bg-neutral-900 flex flex-col">
+      <div className="h-[85%]">
+        <img
+          src="https://cdn.prod.website-files.com/66e844e46ac8124ff5241362/690cba0223d251b9c2f77295_Header_Optimization%20Playbook.jpg"
+          className="h-full w-full object-cover"
+        />
+      </div>
+      <div className="p-5">
+        <p className="text-sm font-semibold mb-2 line-clamp-2">
+          Unlock your show’s full potential on Spotify: download the optimization playbook
+        </p>
+        <p className="text-xs text-gray-400">November 5, 2025</p>
+      </div>
+    </div>
 
-        {/* Featured Card */}
-        <div className="rounded-3xl overflow-hidden bg-neutral-900">
-          <img src="https://picsum.photos/600/400?3" className="h-40 w-full object-cover" />
-          <div className="p-5">
-            <h3 className="font-semibold text-base mb-2">Amplifying your show on Spotify</h3>
-            <span className="text-xs text-gray-400">SEPTEMBER 9, 2025</span>
-          </div>
-        </div>
+    {/* Card 2 – Tall */}
+    <div className="row-span-2 rounded-2xl overflow-hidden bg-neutral-900 flex flex-col">
+      <div className="h-[85%]">
+        <img
+          src="https://cdn.prod.website-files.com/66e844e46ac8124ff5241362/68cc140eea334392c4a8fdf7_MotionSociety-1920x1080.jpg"
+          className="h-full w-full object-cover"
+        />
+      </div>
+      <div className="p-5">
+        <p className="text-sm font-semibold mb-2 line-clamp-2">
+          How to optimize your video on Spotify — Motion Society’s top tips
+        </p>
+        <p className="text-xs text-gray-400">September 18, 2025</p>
+      </div>
+    </div>
 
-        {/* Small Cards */}
-        {[4,5].map((i) => (
-          <div key={i} className="rounded-3xl overflow-hidden bg-neutral-900">
-            <img src={`https://picsum.photos/600/400?${i}`} className="h-40 w-full object-cover" />
-            <div className="p-5">
-              <h3 className="font-semibold text-base mb-2">Feature Focus</h3>
-              <span className="text-xs text-gray-400">JUNE 10, 2025</span>
-            </div>
-          </div>
-        ))}
-      </section>
+    {/* Card 3 */}
+    <div className="rounded-2xl overflow-hidden bg-neutral-900 flex flex-col">
+      <img
+        src="https://cdn.prod.website-files.com/66e844e46ac8124ff5241362/68bb3c3b62fc6515d3a84a2e_Header_GrowthTools_1920x1080.jpg"
+        className="h-40 w-full object-cover"
+      />
+      <div className="p-5">
+        <p className="text-sm font-semibold mb-2 line-clamp-2">
+          Amplifying your show on Spotify with automatic transcripts, chapters, and more
+        </p>
+        <p className="text-xs text-gray-400">September 9, 2025</p>
+      </div>
+    </div>
+
+    {/* Card 4 */}
+    <div className="rounded-2xl overflow-hidden bg-neutral-900 flex flex-col">
+      <img
+        src="https://cdn.prod.website-files.com/66e844e46ac8124ff5241362/688cca5432dded2f44c45942_Header-VideoTrend-1920x1080.jpg"
+        className="h-40 w-full object-cover"
+      />
+      <div className="p-5">
+        <p className="text-sm font-semibold mb-2 line-clamp-2">
+          What is a video podcast? A complete guide for creators
+        </p>
+        <p className="text-xs text-gray-400">August 1, 2025</p>
+      </div>
+    </div>
+
+    {/* Card 5 */}
+    <div className="rounded-2xl overflow-hidden bg-neutral-900 flex flex-col">
+      <img
+        src="https://cdn.prod.website-files.com/66e844e46ac8124ff5241362/6846f7efcdb380d172e1e678_Header_FeatureFocus_02_1920x1080.jpg"
+        className="h-40 w-full object-cover"
+      />
+      <div className="p-5">
+        <p className="text-sm font-semibold mb-2 line-clamp-2">
+          Feature Focus: More ways to grow and stand out on Spotify
+        </p>
+        <p className="text-xs text-gray-400">June 10, 2025</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* Featured Section */}
       <section className="mt-24 bg-[#9b9bff] py-20 px-6 md:px-10">
