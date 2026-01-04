@@ -25,7 +25,7 @@ export default function ResourcesPage() {
       {/* Hero */}
       <section className="relative mx-6 md:mx-10 rounded-3xl overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1522199710521-72d69614c702"
+          src="./66e844e46ac8124ff52418c6_Learn-Header_1920x1080-p-500.jpg"
           alt="hero"
           className="h-[420px] w-full object-cover opacity-60"
         />
