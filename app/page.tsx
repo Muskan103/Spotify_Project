@@ -150,84 +150,215 @@ export default function ResourcesPage() {
 
 
       {/* Featured Section */}
-      <section className="mt-24 bg-[#9b9bff] py-20 px-6 md:px-10">
-        <h2 className="text-5xl font-bold text-center text-black mb-16">Featured</h2>
+      <section
+  id="featured"
+  className="bg-[#9b9bff] py-20 px-6 md:px-10"
+>
+  <div className="max-w-7xl mx-auto">
+    {/* Header */}
+    <h2 className="text-5xl font-bold text-center text-black mb-16">
+      Featured
+    </h2>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 auto-rows-[260px]">
-          <div className="lg:col-span-2 row-span-2 rounded-3xl overflow-hidden bg-white">
-            <img src="https://picsum.photos/1200/600?random=20" className="h-72 w-full object-cover" />
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-black">How “Luke and Pete Talking Sheet” doubled its revenue and grew consumption by 150%</h3>
-              <p className="text-xs text-gray-500 mt-2">DECEMBER 15, 2025</p>
-            </div>
-          </div>
+    {/* Grid */}
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 auto-rows-[240px]">
 
-          <div className="rounded-3xl overflow-hidden bg-white">
-            <img src="https://picsum.photos/600/600?random=21" className="h-48 w-full object-cover" />
-            <div className="p-5">
-              <h3 className="text-sm font-semibold text-black">From basement to Madison Square Garden</h3>
-              <p className="text-xs text-gray-500 mt-2">DECEMBER 2, 2025</p>
-            </div>
-          </div>
-
-          {[22,23,24].map((i) => (
-            <div key={i} className="rounded-3xl overflow-hidden bg-white">
-              <img src={`https://picsum.photos/600/400?random=${i}`} className="h-40 w-full object-cover" />
-              <div className="p-5">
-                <h3 className="text-sm font-semibold text-black">Spotify creator success story</h3>
-                <p className="text-xs text-gray-500 mt-2">SEPTEMBER 2025</p>
-              </div>
-            </div>
-          ))}
+      {/* BIG CARD */}
+      <article className="lg:col-span-2 lg:row-span-2 bg-white rounded-[20px] overflow-hidden">
+        <img
+          src="https://cdn.prod.website-files.com/66e844e46ac8124ff5241362/693d97e3b661bfc9972339b8_Header-LukePete-1920x1080_optimized_250.jpg"
+          className="h-72 w-full object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-base font-semibold leading-snug text-black line-clamp-3">
+            How ‘Luke and Pete Talking Sheet’ doubled its revenue and grew consumption by 150% with video on Spotify
+          </h3>
+          <p className="text-xs text-gray-500 mt-3">
+            December 15, 2025
+          </p>
         </div>
+      </article>
 
-        <div className="flex justify-center gap-4 mt-14">
-          <span className="h-10 w-10 rounded-full bg-white text-black flex items-center justify-center font-medium">1</span>
-          <span className="h-10 w-10 rounded-full border border-white/50 text-white flex items-center justify-center">2</span>
-        </div>
-        
-      </section>
+      {/* SMALL CARDS */}
+      {[
+        {
+          img: "692deb0b529f93531a062dc1_Header-BasementYard-1920x1080-250kb.jpg",
+          title: "From basement to Madison Square Garden: ‘The Basement Yard’s’ rise on Spotify",
+          date: "December 2, 2025",
+        },
+        {
+          img: "68d6e7209e5e1112ed7f19b4_Header-Matt%26Abby-1920x1080.jpg",
+          title: "How “The Unplanned Podcast” achieved a 35% increase in revenue",
+          date: "September 29, 2025",
+        },
+        {
+          img: "690cba0223d251b9c2f77295_Header_Optimization%20Playbook.jpg",
+          title: "Unlock your show’s full potential on Spotify",
+          date: "November 5, 2025",
+        },
+        {
+          img: "68cc140eea334392c4a8fdf7_MotionSociety-1920x1080.jpg",
+          title: "How to optimize your video on Spotify — Motion Society’s tips",
+          date: "September 18, 2025",
+        },
+        {
+          img: "68bb3c3b62fc6515d3a84a2e_Header_GrowthTools_1920x1080.jpg",
+          title: "Amplifying your show on Spotify with transcripts and chapters",
+          date: "September 9, 2025",
+        },
+      ].map((item, i) => (
+        <article
+          key={i}
+          className="bg-white rounded-[20px] overflow-hidden"
+        >
+          <img
+            src={`https://cdn.prod.website-files.com/66e844e46ac8124ff5241362/${item.img}`}
+            className="h-40 w-full object-cover"
+          />
+          <div className="p-4">
+            <h3 className="text-sm font-semibold leading-snug text-black line-clamp-3">
+              {item.title}
+            </h3>
+            <p className="text-xs text-gray-500 mt-2">
+              {item.date}
+            </p>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    {/* Pagination */}
+    <div className="flex justify-center gap-3 mt-14">
+      <div className="h-9 w-9 rounded-full bg-white text-black flex items-center justify-center text-sm font-medium">
+        1
+      </div>
+      <div className="h-9 w-9 rounded-full border border-white/60 text-white flex items-center justify-center text-sm">
+        2
+      </div>
+    </div>
+  </div>
+</section>
+
+
       {/* Grow Section */}
-<section className="bg-[#3f4f0f] py-20 px-6 md:px-10">
-  <div className="flex flex-col md:flex-row justify-between mb-12">
-    <h2 className="text-5xl font-bold">Grow</h2>
-    <p className="max-w-md text-sm text-gray-200 mt-4 md:mt-0">
-      Get tips on growing your audience, engaging fans, monetizing your content,
-      and marketing your show.
+      <section className="bg-[#4a5f12] py-24 px-6 md:px-10">
+  {/* Header */}
+  <div className="mb-20 flex items-start justify-between">
+    <h2 className="text-[96px] font-bold text-white leading-none">
+      Grow
+    </h2>
+
+    <p className="text-white text-lg font-semibold leading-relaxed max-w-md text-right">
+      Get tips on growing your audience,<br />
+      engaging fans, monetizing your<br />
+      content, and marketing your show.
     </p>
   </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 auto-rows-[260px]">
-    <div className="md:col-span-2 row-span-2 rounded-3xl overflow-hidden bg-black">
+  {/* Grid */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    {/* FEATURED CARD */}
+    <a className="md:col-span-2 bg-white rounded-3xl overflow-hidden">
       <img
-        src="https://picsum.photos/1200/700?grow1"
-        className="h-full w-full object-cover"
+        src="https://picsum.photos/1200/600?grow1"
+        className="w-full h-[280px] object-cover"
+        alt=""
+      />
+      <div className="p-8">
+        <h3 className="text-lg font-semibold text-black leading-snug">
+          Unlock your show’s full potential on Spotify:
+          download the optimization playbook
+        </h3>
+        <p className="text-xs text-gray-500 mt-3">
+          NOVEMBER 5, 2025
+        </p>
+      </div>
+    </a>
+
+    {/* RIGHT TOP CARD */}
+    <a className="bg-white rounded-3xl overflow-hidden">
+      <img
+        src="https://picsum.photos/600/400?grow2"
+        className="w-full h-[300px] object-cover"
+        alt=""
       />
       <div className="p-6">
-        <h3 className="font-semibold">Optimization Playbook</h3>
-        <p className="text-xs text-gray-400 mt-1">NOVEMBER 2025</p>
+        <h3 className="text-sm font-semibold text-black leading-snug">
+          How to optimize your video on Spotify —
+          Motion Society’s top tips
+        </h3>
+        <p className="text-xs text-gray-500 mt-3">
+          SEPTEMBER 18, 2025
+        </p>
       </div>
-    </div>
+    </a>
 
-    {[1,2,3,4].map((i) => (
-      <div key={i} className="rounded-3xl overflow-hidden bg-black">
+    {/* BOTTOM ROW */}
+    {[1, 2, 3].map((i) => (
+      <a
+        key={i}
+        className="bg-white rounded-3xl overflow-hidden"
+      >
         <img
-          src={`https://picsum.photos/600/400?grow${i}`}
-          className="h-40 w-full object-cover"
+          src={`https://picsum.photos/600/400?grow${i + 2}`}
+          className="w-full h-[220px] object-cover"
+          alt=""
         />
-        <div className="p-5">
-          <h3 className="text-sm font-semibold">Feature Focus</h3>
-          <p className="text-xs text-gray-400 mt-1">2025</p>
+        <div className="p-6">
+          <h3 className="text-sm font-semibold text-black leading-snug">
+            Feature Focus: More ways to grow and stand out
+          </h3>
+          <p className="text-xs text-gray-500 mt-3">
+            JUNE 10, 2025
+          </p>
         </div>
-      </div>
+      </a>
+      
     ))}
+      {/* FEATURED CARD */}
+      <a className="md:col-span-2 bg-white rounded-3xl overflow-hidden">
+      <img
+        src="https://picsum.photos/1200/600?grow1"
+        className="w-full h-[280px] object-cover"
+        alt=""
+      />
+      <div className="p-8">
+        <h3 className="text-lg font-semibold text-black leading-snug">
+          Unlock your show’s full potential on Spotify:
+          download the optimization playbook
+        </h3>
+        <p className="text-xs text-gray-500 mt-3">
+          NOVEMBER 5, 2025
+        </p>
+      </div>
+    </a>
+
+    {/* RIGHT TOP CARD */}
+    <a className="bg-white rounded-3xl overflow-hidden">
+      <img
+        src="https://picsum.photos/600/400?grow2"
+        className="w-full h-[300px] object-cover"
+        alt=""
+      />
+      <div className="p-6">
+        <h3 className="text-sm font-semibold text-black leading-snug">
+          How to optimize your video on Spotify —
+          Motion Society’s top tips
+        </h3>
+        <p className="text-xs text-gray-500 mt-3">
+          SEPTEMBER 18, 2025
+        </p>
+      </div>
+    </a>
   </div>
 
-  <div className="flex justify-center gap-3 mt-12">
-    {[1,2,3,4,5].map((n) => (
+  {/* Pagination */}
+  <div className="flex justify-center items-center gap-3 mt-20">
+    {[1, 2, 3, 4, 5].map((n) => (
       <span
         key={n}
-        className={`h-9 w-9 rounded-full flex items-center justify-center ${
+        className={`h-9 w-9 flex items-center justify-center rounded-full text-sm font-medium ${
           n === 1
             ? "bg-white text-black"
             : "border border-white/40 text-white"
@@ -236,9 +367,13 @@ export default function ResourcesPage() {
         {n}
       </span>
     ))}
-    <span className="ml-3 text-sm text-white">Last</span>
+    <span className="ml-3 text-sm text-white opacity-80">
+      Last
+    </span>
   </div>
 </section>
+
+
 {/* Case Studies Section */}
 <section className="bg-[#2b0a8d] py-24 px-6 md:px-10">
   <div className="flex justify-between items-start mb-12">
