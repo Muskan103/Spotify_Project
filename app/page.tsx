@@ -7,7 +7,8 @@ export default function ResourcesPage() {
     <div className="min-h-screen bg-black text-white">
       {/* Navbar */}
       <header className="flex items-center justify-between px-8 py-5">
-        <div className="text-xl font-semibold">Spotify <span className="font-light">for</span> Creators</div>
+        <div className="w-38"><img src="./image.svg" alt="Logo" /> </div>
+       
         <nav className="hidden md:flex gap-6 text-sm text-gray-300">
           <a className="hover:text-white">Features</a>
           <a className="hover:text-white">Resources</a>
@@ -51,11 +52,6 @@ export default function ResourcesPage() {
 
       </section>
 
-
-
-
-      
-
       {/* Categories */}
       <section className="mt-10 px-6 md:px-10">
   <div className="flex flex-wrap justify-center gap-4">
@@ -70,7 +66,6 @@ export default function ResourcesPage() {
     ))}
   </div>
 </section>
-
 
       {/* Resource Cards */}
       <section className="mt-16 px-6 md:px-10">
@@ -152,7 +147,6 @@ export default function ResourcesPage() {
 
   </div>
 </section>
-
 
       {/* Featured Section */}
       <section
@@ -245,6 +239,37 @@ export default function ResourcesPage() {
 </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* Grow Section */}
       <section className="bg-[#4a5f12] py-24 px-6 md:px-10">
   {/* Header */}
@@ -262,7 +287,7 @@ export default function ResourcesPage() {
 
   {/* Grid */}
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    
+
     {/* FEATURED CARD */}
     <a className="md:col-span-2 bg-white rounded-3xl overflow-hidden">
       <img
@@ -319,7 +344,7 @@ export default function ResourcesPage() {
           </p>
         </div>
       </a>
-      
+
     ))}
       {/* FEATURED CARD */}
       <a className="md:col-span-2 bg-white rounded-3xl overflow-hidden">
@@ -379,6 +404,27 @@ export default function ResourcesPage() {
 </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {/* Case Studies Section */}
 <section className="bg-[#2b0a8d] py-24 px-6 md:px-10">
   <div className="flex justify-between items-start mb-12">
@@ -414,7 +460,6 @@ export default function ResourcesPage() {
     <button className="absolute right-6 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white text-black flex items-center justify-center">
       ›
     </button>
-
 
   </div>
 </section>
@@ -495,6 +540,15 @@ export default function ResourcesPage() {
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -598,12 +652,6 @@ export default function ResourcesPage() {
     </div>
   </div>
 </section>
-
-
-
-
-
-
 
 <section className="bg-[#2a008a] py-20 relative overflow-hidden">
   {/* Header */}
@@ -710,18 +758,7 @@ export default function ResourcesPage() {
   </div>
 </section>
 
-
-
-
 <section className="bg-[#2a008a] py-20 relative overflow-hidden">
-  {/* Header */}
-  <div className="px-6 md:px-10 flex justify-between items-start mb-10">
-    <h2 className="text-5xl font-bold text-white">Masterclass</h2>
-    <p className="max-w-sm text-sm text-white/80">
-      Go deeper with creator-focused lessons designed to help you
-      build your show and audience.
-    </p>
-  </div>
 
   {/* LEFT ARROW (visual only) */}
   <div
@@ -742,59 +779,8 @@ export default function ResourcesPage() {
   </div>
 
   {/* CONTENT */}
-  <div className="flex gap-8 px-6 md:px-10">
-    {/* MAIN FULL IMAGE */}
-    <div className="w-[85%] rounded-3xl overflow-hidden relative">
-      <img
-        src="https://picsum.photos/1600/900?master1"
-        className="h-[440px] w-full object-cover"
-        alt=""
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-      <div className="absolute bottom-10 left-10 text-white">
-        <span className="text-xs uppercase tracking-widest opacity-80">
-          Masterclass
-        </span>
-        <h3 className="text-4xl font-semibold mt-3">
-          Leveraging Video on Spotify
-        </h3>
-      </div>
-    </div>
 
-    {/* PARTIALLY VISIBLE NEXT IMAGE */}
-    <div className="w-[40%] rounded-3xl overflow-hidden relative opacity-90">
-      <img
-        src="https://picsum.photos/1600/900?master2"
-        className="h-[440px] w-full object-cover"
-        alt=""
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-      <div className="absolute bottom-10 left-8 text-white">
-        <span className="text-xs uppercase tracking-widest opacity-80">
-          Masterclass
-        </span>
-        <h3 className="text-2xl font-semibold mt-2">
-          Growing and Engaging Your Audience
-        </h3>
-      </div>
-    </div>
-  </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <section className="bg-[#ff7a66] py-20">
   {/* HEADER */}
@@ -811,7 +797,7 @@ export default function ResourcesPage() {
 
   {/* CARDS */}
   <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-5">
-    
+
     {/* CARD 1 */}
     <div className="bg-white rounded-xl overflow-hidden shadow-sm">
       <img
@@ -865,9 +851,6 @@ export default function ResourcesPage() {
 
   </div>
 </section>
-
-
-
 
 <section className="bg-black py-20">
   <div className="max-w-6xl ml-40 mr-40 mx-auto px-6">
@@ -975,8 +958,6 @@ export default function ResourcesPage() {
   </div>
 </section>
 
-
-
 <section className="bg-[#f7f6f2] py-32 overflow-hidden">
   <div className="relative">
 
@@ -1008,20 +989,6 @@ export default function ResourcesPage() {
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <footer className="bg-black text-white h-[30vh] min-h-[260px]">
   <div className="max-w-7xl mx-auto h-full px-10 py-10 flex flex-col justify-between">
 
@@ -1029,10 +996,7 @@ export default function ResourcesPage() {
 
       {/* LOGO + COPYRIGHT */}
       <div className="md:col-span-1">
-        <div className="flex items-center gap-2 mb-6">
-          <span className="text-xl font-semibold">Spotify</span>
-          <span className="text-xl font-light">for Creators</span>
-        </div>
+       <div className="w-38 mb-18"><img src="./image.svg" alt="Logo" /> </div>
         <p className="text-xs text-white/60">
           © 2026 Spotify
         </p>
@@ -1071,7 +1035,7 @@ export default function ResourcesPage() {
         </ul>
       </div>
 
-      {/* FOLLOW US */}
+      {/* FOLLOW US */}ma
       <div>
         <h4 className="font-semibold mb-4">Follow us</h4>
         <div className="flex gap-4">
@@ -1101,8 +1065,334 @@ export default function ResourcesPage() {
   </div>
 </footer>
 
-
-      
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// "use client";
+
+// import { useState } from "react";
+// import { Search } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+// import { Input } from "@/components/ui/input";
+
+// type SectionKey =
+//   | "Grow"
+//   | "Create"
+//   | "How to"
+//   | "Case Studies"
+//   | "Masterclass";
+
+// export default function ResourcesPage() {
+//   const [activeSection, setActiveSection] = useState<SectionKey>("Grow");
+
+//   const sections: SectionKey[] = [
+//     "Grow",
+//     "Create",
+//     "How to",
+//     "Case Studies",
+//     "Masterclass",
+//   ];
+
+//   const orderedSections = [
+//     activeSection,
+//     ...sections.filter((s) => s !== activeSection),
+//   ];
+
+//   return (
+//     <div className="min-h-screen bg-black text-white">
+//       {/* ================= NAVBAR ================= */}
+//       <header className="flex items-center justify-between px-8 py-5">
+//         <div className="text-xl font-semibold">
+//           Spotify <span className="font-light">for</span> Creators
+//         </div>
+
+//         <nav className="hidden md:flex gap-6 text-sm text-gray-300">
+//           <a className="hover:text-white cursor-pointer">Features</a>
+//           <a className="hover:text-white cursor-pointer">Resources</a>
+//           <a className="hover:text-white cursor-pointer">Video</a>
+//           <a className="hover:text-white cursor-pointer">Podcast</a>
+//           <a className="hover:text-white cursor-pointer">Switch</a>
+//           <a className="hover:text-white cursor-pointer">Help</a>
+//         </nav>
+
+//         <div className="flex gap-3">
+//           <Button variant="ghost">Login</Button>
+//           <Button className="rounded-full">Sign up</Button>
+//         </div>
+//       </header>
+
+//       {/* ================= HERO ================= */}
+//       <section className="relative mx-6 md:mx-10 rounded-3xl overflow-hidden">
+//         <img
+//           src="./66e844e46ac8124ff52418c6_Learn-Header_1920x1080-p-500.jpg"
+//           alt="Resources"
+//           className="h-[520px] w-full object-cover"
+//         />
+//         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/30" />
+
+//         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+//           <h1 className="text-[72px] md:text-[120px] font-bold mb-4">
+//             Resources
+//           </h1>
+//           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl">
+//             Discover insights, expert interviews, creator case studies,
+//             and practical guides to help you grow.
+//           </p>
+
+//           <div className="relative w-full max-w-xl">
+//             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70" />
+//             <Input
+//               placeholder="Search"
+//               className="pl-12 rounded-full bg-transparent border-white/30 text-white placeholder:text-white/60"
+//             />
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ================= CATEGORY BUTTONS ================= */}
+//       <section className="mt-12 px-6 md:px-10">
+//         <div className="flex flex-wrap justify-center gap-4">
+//           {sections.map((item) => (
+//             <Button
+//               key={item}
+//               onClick={() => setActiveSection(item)}
+//               variant={activeSection === item ? "secondary" : "default"}
+//               className="rounded-full px-8 py-7"
+//             >
+//               {item}
+//             </Button>
+//           ))}
+//         </div>
+//       </section>
+
+//       {/* ================= SECTIONS (REORDERED) ================= */}
+//       <div className="mt-12 space-y-12">
+//         {orderedSections.map((section) => {
+//           switch (section) {
+//             case "Grow":
+//               return (
+//                 <section
+//                   key={section}
+//                   className="bg-[#4a5f12] py-24 px-6 md:px-10"
+//                 >
+//                   <h2 className="text-4xl md:text-5xl font-bold mb-6">
+//                     Grow
+//                   </h2>
+//                   <p className="max-w-3xl text-lg opacity-90">
+//                     Learn how to grow your audience, increase engagement,
+//                     and monetize your content with proven strategies.
+//                   </p>
+//                 </section>
+//               );
+
+//             case "Create":
+//               return (
+//                 <section
+//                   key={section}
+//                   className="bg-[#9b9bff] text-black py-24 px-6 md:px-10"
+//                 >
+//                   <h2 className="text-4xl md:text-5xl font-bold mb-6">
+//                     Create
+//                   </h2>
+//                   <p className="max-w-3xl text-lg">
+//                     Tools, workflows, and inspiration to help you create
+//                     content that truly connects with your audience.
+//                   </p>
+//                 </section>
+//               );
+
+//             case "How to":
+//               return (
+//                 <section
+//                   key={section}
+//                   className="bg-[#ff7a66] text-black py-24 px-6 md:px-10"
+//                 >
+//                   <h2 className="text-4xl md:text-5xl font-bold mb-6">
+//                     How to
+//                   </h2>
+//                   <p className="max-w-3xl text-lg">
+//                     Step-by-step tutorials and practical guides to help
+//                     you execute ideas with confidence.
+//                   </p>
+//                 </section>
+//               );
+
+//             case "Case Studies":
+//               return (
+//                 <section
+//                   key={section}
+//                   className="bg-[#2b0a8d] py-24 px-6 md:px-10"
+//                 >
+//                   <h2 className="text-4xl md:text-5xl font-bold mb-6">
+//                     Case Studies
+//                   </h2>
+//                   <p className="max-w-3xl text-lg opacity-90">
+//                     Real stories from creators—what worked, what didn’t,
+//                     and what you can learn from them.
+//                   </p>
+//                 </section>
+//               );
+
+//             case "Masterclass":
+//               return (
+//                 <section
+//                   key={section}
+//                   className="bg-[#2a008a] py-24 px-6 md:px-10"
+//                 >
+//                   <h2 className="text-4xl md:text-5xl font-bold mb-6">
+//                     Masterclass
+//                   </h2>
+//                   <p className="max-w-3xl text-lg opacity-90">
+//                     Deep-dive sessions led by industry experts to help
+//                     you level up your skills.
+//                   </p>
+//                 </section>
+//               );
+//           }
+//         })}
+//       </div>
+//     </div>
+//   );
+// }
